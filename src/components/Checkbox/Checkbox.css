@@ -1,0 +1,41 @@
+.Checkbox {
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+}
+
+.CheckboxContainer {
+  height: 23px;
+  width: 23px;
+  background: inherit;
+  border: 1px solid hsla(235, 6%, 65%, 0.342);
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CheckboxContainer img {
+  opacity: 0;
+}
+
+.Checkbox input {
+  height: 23px;
+  width: 23px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.Checkbox input:checked ~ .CheckboxContainer {
+  background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.Checkbox input:checked ~ .CheckboxContainer img {
+  opacity: 1;
+}

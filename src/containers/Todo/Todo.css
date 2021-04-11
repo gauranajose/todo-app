@@ -1,0 +1,30 @@
+.Todo {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: left -200px top;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.Todo > p {
+  font-size: 12px;
+  color: rgba(170, 170, 170, 0.486);
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media(min-width: 500px) {
+  .Todo {
+    background-size: 100%;
+    background-position: left 0 top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Todo > p {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,29 @@
+.Header {
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Header h2 {
+  letter-spacing: 8px;
+  margin: 0;
+}
+
+.Header img {
+  height: 20px;
+  cursor: pointer;
+}
+
+@media(min-width: 500px) {
+  .Header {
+    width: 480px;
+  }
+}
+
+@media(min-height: 813px) {
+  .Header {
+    margin-top: 50px;
+  }
+}
